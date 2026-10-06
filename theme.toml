@@ -1,0 +1,26 @@
+# plum theme
+# Colors as #RRGGBB. Place next to plum.exe or in %APPDATA%\plum\theme.toml.
+# Missing keys fall back to defaults.
+
+# background
+bg = #181725
+
+# selected row / hovered
+surface = #3F414E
+
+# normal text
+text = #EBEAEC
+
+# muted text / file names
+dim = #e97bff
+
+# accent (folders, wordmark, dates)
+accent = #8E97FD
+
+# success / stats
+ok = #6CB28E
+
+# errors
+err = #FA6E5A
+# terminal font (used by install.ps1 for the Windows Terminal profile)
+font = Cascadia Mono

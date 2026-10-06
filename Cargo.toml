@@ -1,0 +1,28 @@
+[package]
+name = "plum"
+version = "0.1.0"
+edition = "2021"
+autobins = false
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+tar = "0.4"
+flate2 = "1"
+xz2 = "0.1"
+bzip2 = "0.6"
+zstd = { version = "0.13", features = ["zstdmt"] }
+lz4_flex = "0.11"
+zip = { version = "2", default-features = false, features = ["deflate", "aes-crypto"] }
+chrono = "0.4"
+rfd = "0.15"
+sevenz-rust = { version = "0.6", features = ["aes256"] }
+unrar-rs = { version = "0.10", default-features = false, features = ["crypto-rust"] }
+
+[[bin]]
+name = "plum"
+path = "src/main.rs"
+
+[profile.release]
+lto = "thin"
+strip = true
